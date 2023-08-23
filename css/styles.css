@@ -251,7 +251,7 @@
      height: 56px;
      border: none;
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     
+
  }
 
  .button:hover,
@@ -517,9 +517,9 @@
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .social-item :hover,
+ .social-item :hover
  .social-item :focus {
-    
+     background-color: #31D0AA;
  }
 
  .social-link-footer {
@@ -532,9 +532,7 @@
      border-radius: 50%;
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
- .social-link-footer:hover{
-    background-color: #31D0AA;
- }
+
  .link-icon-footer {
 
      width: 24px;
@@ -682,13 +680,25 @@
      column-gap: 24px;
  }
 
- .card-list-item :hover,
+ .card-list-item :hover
  .card-list-item :focus {
-     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
  }
 
  .card-list-item {
-     width: calc((100% - 48px) / 3);
+     cursor: pointer;
+     display: flex;
+     width: 360px;
+     height: 420px;
+     padding-bottom: 0px;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 32px;
+     flex-shrink: 0;
+     background: var(--white);
+     flex-basis: calc((100% - 24px * 2) / 3);
+     background: var(--white);
+
  }
 
  .item-link {
@@ -696,13 +706,11 @@
      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .item-link :hover,
+ .item-link :hover 
  .item-link :focus {
-     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-         0px 1px 1px rgba(46, 47, 66, 0.16),
-         0px 2px 1px rgba(46, 47, 66, 0.08);
-     transform: translateY(0%);
+     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
  }
+
 
  .card-box {
      position: relative;
@@ -725,8 +733,8 @@
      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .item-link :hover .overlay,
- .item-link :focus .overlay :focus {
+ .item-link :hover .overlay ,
+ .item-link :focus .overlay {
      transform: translateY(0%);
  }
 
@@ -736,6 +744,7 @@
      padding: 32px 16px;
      border: 1px solid #e7e9fc;
      border-top: none;
+     border: 1px solid #e7e9fc;
  }
 
  .card-item-title {
