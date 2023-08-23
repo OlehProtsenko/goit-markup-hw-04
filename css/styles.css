@@ -680,13 +680,8 @@
      column-gap: 24px;
  }
 
- .card-list-item :hover
+ .card-list-item :hover ,
  .card-list-item :focus {
-    border: 1px solid var(--cloud);
-    background: var(--white);
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
  }
 
@@ -705,20 +700,12 @@
 
  }
 
- .item-link {
-     display: block;
-     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
-
- .item-link :hover ,
- .item-link :focus {
-     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
- }
-
-
+ 
  .card-box {
      position: relative;
      overflow: hidden;
+     display: block;
+     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
  }
 
@@ -737,10 +724,10 @@
      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .item-link :hover .overlay {
+ .card-list-item :hover .overlay {
     transform: translateY(0%);
  }
- .item-link :focus .overlay {
+ .card-list-item :focus .overlay {
      transform: translateY(0%);
  }
 
