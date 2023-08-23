@@ -212,6 +212,7 @@
      max-width: 1440px;
      background-position: center;
      background-size: cover;
+     margin: 0 auto;
 
  }
 
@@ -250,7 +251,7 @@
      height: 56px;
      border: none;
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     ;
+     
  }
 
  .button:hover,
@@ -374,7 +375,6 @@
  .team-wrape-item :hover,
  .team-wrape-item :focus {
      background-color: #404BBF;
-
  }
 
  .team-wrape-item {
@@ -514,11 +514,12 @@
      display: flex;
      justify-content: center;
      gap: 16px;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .social-item :hover,
  .social-item :focus {
-     background-color: #31D0AA;
+    
  }
 
  .social-link-footer {
@@ -531,7 +532,9 @@
      border-radius: 50%;
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
-
+ .social-link-footer:hover{
+    background-color: #31D0AA;
+ }
  .link-icon-footer {
 
      width: 24px;
@@ -636,8 +639,10 @@
 
  .filtr-list-item :hover,
  .filtr-list-item :focus {
-    box-shadow:  0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+     color: #FFFFFF;
+     background-color: #404BBF;
+     border: 1px solid transparent;
  }
 
  .button-filtre {
@@ -663,6 +668,7 @@
      color: #FFFFFF;
      background-color: #404BBF;
      border: 1px solid transparent;
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
  }
 
@@ -695,7 +701,7 @@
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
          0px 1px 1px rgba(46, 47, 66, 0.16),
          0px 2px 1px rgba(46, 47, 66, 0.08);
-    transform: translateY(0%);
+     transform: translateY(0%);
  }
 
  .card-box {
@@ -719,8 +725,8 @@
      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .item-link :hover .overlay ,
- .item-link :focus .overlay  {
+ .item-link :hover .overlay,
+ .item-link :focus .overlay :focus {
      transform: translateY(0%);
  }
 
